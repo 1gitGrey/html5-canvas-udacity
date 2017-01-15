@@ -1,0 +1,79 @@
+body {
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 28px;
+    text-align: justify;
+    background-color: white;
+    color: #808080;
+}
+
+canvas {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+canvas::before {
+    content: "Collect as many gems as possible!"
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    color: navy;
+    font-size: .8em;
+}
+
+kbd {
+    border: 0px solid gray;
+    color: crimson;
+    padding: 5px 5px;
+    margin: 0 5px;
+    font-size: 1em;
+    text-transform: uppercase;
+    -webkit-box-shadow: 1px 0 1px 0 #fff, 0 2px 0 2px lightGray, 0 2px 0 3px #333;
+    -moz-box-shadow: 1px 0 1px 0 #fff, 0 2px 0 2px lightGray, 0 2px 0 3px #333;
+    box-shadow: 1px 0 1px 0 #fff, 0 2px 0 2px lightGray, 0 2px 0 3px #333;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: -moz-linear-gradient(left, #ffffff 0%, #e2e2e2 25%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(25%, #e2e2e2));
+    background: -webkit-linear-gradient(left, #ffffff 0%, #e2e2e2 25%);
+    background: -o-linear-gradient(left, #ffffff 0%, #e2e2e2 25%);
+    background: -ms-linear-gradient(left, #ffffff 0%, #e2e2e2 25%);
+    background: linear-gradient(left, #ffffff 0%, #e2e2e2 25%);
+}
+
+kbd:hover {
+    color: orange;
+}
+
+span.invisible {
+    visibility: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+hr {
+    max-width: 50%;
+    color: blue;
+    background-color: blue;
+}
+
+hr::before,
+hr::after {
+    content: ;
+}
+
+header {
+    text-indent: 0.5px;
+    text-align: center;
+}

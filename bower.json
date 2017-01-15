@@ -1,0 +1,26 @@
+{
+  "name": "game-clone",
+  "authors": [
+    "Grey Grissom <grey.grissom@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "keywords": [
+    "html",
+    "5",
+    "canvas",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}

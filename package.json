@@ -1,0 +1,16 @@
+{
+  "name": "game-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "grunt-cli": "^1.2.0",
+    "gulp": "^3.9.1"
+  }
+}
