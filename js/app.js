@@ -86,6 +86,7 @@ var Player = function() {
     this.y = 392;
     this.health = 7;
     this.isDead = false;
+    this.hasStar = false;
 
     this.reset = function() {
         this.x = 404;
@@ -118,6 +119,9 @@ Player.prototype.update = function() {
         this.reset();
     }
 
+    if (this.hasStar) {
+        this.starMode();
+    }
 
     if (this.health < 1) {
         this.isDead = true;
@@ -154,6 +158,16 @@ Player.prototype.handleInput = function(key) {
 
     };
 };
+
+Player.prototype.starMode = function() {
+
+
+    //player has 1.5 the speed and
+    // is unaffected by bug bitss
+
+}
+
+
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
@@ -230,14 +244,16 @@ Helper.prototype.render = function() {
 
 
 Helper.prototype.reset = function() {
-    var dass = this;
+    /*var dass = this;
     dass.x = -101;
     dass.y = -101;
 
     setInterval(function() {
         dass.loadItem();
         Item.prototype.reset.call(dass);
-    }, 3000);
+    }, 3000);*/
+
+    this.x = bind(Item)
 };
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -259,13 +275,15 @@ var item = new Helper();
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
-document.addEventListener('keyup', function(e) {
+document.addEventListener('keydown', function(e) {
     var allowedKeys = {
         37: 'left',
         38: 'up',
         39: 'right',
-        40: 'down'
+        40: 'down',
+        32: 'space',
+        13: 'enter'
     };
-
+    e.preventDefault()
     player.handleInput(allowedKeys[e.keyCode]);
 });

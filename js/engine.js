@@ -114,9 +114,12 @@ var Engine = (function(global) {
                 case 'images/Heart.png':
                     player.health += 1;
                     item.reset();
-                    document.getElementById('health').innerHTML = player.health;
+                    document.getElementById('health').innerHTML = 'Health: ' + player.health;
                     break;
                 case 'images/Star.png':
+                    setInterval(function() {
+                        player.hasStar = true;
+                    })
                     item.reset();
                     break;
                 case 'images/Key.png':
@@ -144,6 +147,9 @@ var Engine = (function(global) {
     }
 
     function checkGameStatus() {
+
+
+
         if (player.isDead) {
             game.stop = true;
             game.gameOver();
